@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html ng-app="ROMApp">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="shortcut icon" href="" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/head_footer.css" />
+		<link rel="stylesheet" type="text/css" href="css/details.css" />
+		<title>详情-官方</title>
+
+		<script src="js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.page.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="controller/ROMController.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body ng-controller="ROMCtrl">
+
+		<!--头部-->
+		<div ng-include="urltop"></div>
+
+		<!--中间内容-->
+		<!--头部-->
+		<section class="header">
+			<div class="totalbox">
+				<p class="title">您的当前位置：
+					<a href="javascript:void(0)">首页</a> >
+					<a href="javascript:void(0)">rom</a> >
+					<a href="javascript:void(0)">xiaomi</a> >
+					<a class="active" href="javascript:void(0)">小米4-{MIUI8} 5.11.14</a>
+				</p>
+
+				<div class="left">
+					<div class="img">
+						<img src="img/phone_details.png" />
+					</div>
+					<div class="txt">
+						<div class="title">
+							<p>小米4-{MIUI8} 5.11.14</p>
+							<p class="guanfang">官方固件</p>
+							<div class="clearfix"></div>
+						</div>
+						<div class="des">
+							<table>
+								<tr>
+									<td>机型：<span>小米4</span></td>
+									<td>发布日期：<span>2019 .01.13</span></td>
+									<td>Android：<span>7.0</span></td>
+								</tr>
+								<tr>
+									<td>下载量：<span>1111</span></td>
+									<td>ROM大小：<span>1.8g</span></p>
+										<td>rom作者：<span>官方</span></td>
+								</tr>
+							</table>
+						</div>
+						<div class="button">
+							<a class="made" href="javascript:void(0)">定制ROM</a>
+							<a class="download" href="javascript:void(0)">高速下载</a>
+						</div>
+					</div>
+
+				</div>
+				<div class="right">
+					<div class="Related">
+						<div class="top_title">
+							<p>相关推荐</p>
+						</div>
+						<div class="Rel_list">
+							<ul>
+								<li>
+									<span class="num">1</span>
+									<span class="name">小米4</span>
+									<span class="version_l">MIUI8.0</span>
+								</li>
+								<li>
+									<span class="num">2</span>
+									<span class="name">魅族mx4</span>
+									<span class="version_l">3.127</span>
+								</li>
+								<li>
+									<span class="num">3</span>
+									<span class="name">一加3</span>
+									<span class="version_l">3.8686</span>
+								</li>
+								<li>
+									<span class="num">4</span>
+									<span class="name">小米4</span>
+									<span class="version_l">MIUI8.0</span>
+								</li>
+								<li>
+									<span class="num">5</span>
+									<span class="name">小米4</span>
+									<span class="version_l">MIUI8.0</span>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+
+				</div>
+				<div class="clearfix"></div>
+
+			</div>
+		</section>
+
+		<!--内容-->
+		<section class="content">
+			<div class="totalbox">
+				<div class="con_content">
+					<div class="top_title">
+						<p>ROM介绍</p>
+					</div>
+					<div class="con_list">
+						<div class="img">
+							<div class="cir cirleft" id="pre">
+								<img src="img/pre.png" />
+							</div>
+							<img src="img/details_1.png" alt="" />
+							<img src="img/details_2.png" alt="" />
+							<img src="img/details_3.png" alt="" />
+							<img src="img/details_4.png" alt="" />
+							<img src="img/details_5.png" alt="" />
+							<img src="img/details_6.png" alt="" />
+							<img src="img/details_1.png" alt="" />
+							<img src="img/details_2.png" alt="" />
+							<img src="img/details_3.png" alt="" />
+							<img src="img/details_4.png" alt="" />
+							<img src="img/details_5.png" alt="" />
+							<img src="img/details_6.png" alt="" />
+							<div class="cir cirright" id="next">
+								<img src="img/next.png" />
+							</div>
+						</div>
+						<script type="text/javascript">
+							$(function() {
+								var img = $('.con_list .img >img');
+								var i = 0;
+								var n = img.length;
+								var pre = $('#pre');
+								var next = $('#next');
+								if(img.eq(0).css('display') == 'none') {
+									pre.show();
+								} else {
+									pre.hide();
+								}
+								if(img.eq(n - 7).css('display') == 'none') {
+									next.hide();
+								} else {
+									next.show();
+								}
+								next.click(function() {
+									if(i < img.length - 6) {
+										img.eq(i).hide();
+										i++;
+									}
+									if(img.eq(0).css('display') == 'none') {
+										pre.show();
+									} else {
+										pre.hide();
+									}
+									if(img.eq(n - 7).css('display') == 'none') {
+										next.hide();
+									} else {
+										next.show();
+									}
+								})
+								pre.click(function() {
+									if(i > 0) {
+										i--;
+										img.eq(i).show();
+									}
+									if(img.eq(0).css('display') == 'none') {
+										pre.show();
+									} else {
+										pre.hide();
+									}
+									if(img.eq(n - 7).css('display') == 'none') {
+										next.hide();
+									} else {
+										next.show();
+									}
+								})
+
+							})
+						</script>
+						<div class="des">
+							<dl>
+								<dt>ROM介绍：</dt>
+								<dd>1、本小米4刷机包，100%经过审核检测！保证官方安全无毒 </dd>
+								<dd>2、本小米4刷机包的固件版本号是：5.11.14 </dd>
+								<dd>3、本小米四刷机包的安卓版本：7.0 </dd>
+								<dd>4、本小米4刷机包如果有错误，请点联系我们客服QQ：123456！我们第一时间帮你解决。</dd>
+							</dl>
+							<dl>
+								<dt>刷机步骤：</dt>
+								<dd>1、请先下载刷机包</dd>
+								<dd>2、下载线刷工具，进行安装！</dd>
+								<dd>3、打开USB调试，全自动核实该ROM是否匹配你的的手机【匹配技术首创】</dd>
+								<dd>4、自动安装驱动后，全自动刷机完成！</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+		</section>
+
+		<!--评论-->
+		<section class="comment">
+			<div class="totalbox">
+				<div class="comment_content">
+					<div class="top_title">
+						<p>用户评论</p>
+					</div>
+					<div class="comment_sub">
+						<div class="text">
+							<textarea name="comment"></textarea>
+							<p>请先
+								<a href="javascript:void(0)">登录</a>
+								后发表评论
+							</p>
+							<button type="submit">发表评论</button>
+						</div>
+						<ul class="one">
+							<li>
+								<div class="img">
+									<img src="img/touxiang.png" alt="" />
+								</div>
+								<div class="con">
+									<p class="name">用户aaaaa</p>
+									<p>手机不能刷 无法降级怎么办 钱白花了？</p>
+								</div>
+								<div class="date">
+									<p class="riqi">2017-01-16 14:40:00</p>
+									<p class="huifu">回复</p>
+									<p class="shouqi">收起回复</p>
+								</div>
+								<div class="clearfix"></div>
+							</li>
+							<li>
+								<div class="img">
+									<img src="img/touxiang.png" alt="" />
+								</div>
+								<div class="con">
+									<p class="name">用户aaaaa</p>
+									<p class="txt">手机不能刷 无法降级怎么办 钱白花了？</p>
+								</div>
+								<div class="date">
+									<p class="riqi">2017-01-16 14:40:00</p>
+									<p class="huifu">回复</p>
+									<p class="shouqi">收起回复</p>
+								</div>
+								<div class="clearfix"></div>
+								<ul class="two">
+									<li>
+										<div class="img">
+											<img src="img/touxiang.png" alt="" />
+										</div>
+										<div class="con">
+											<p class="name"><i>用户bbb</i> 回复@ <i>用户aaaaa</i></p>
+											<p>手机不能刷 无法降级怎么办 钱白花了？</p>
+										</div>
+										<div class="date">
+											<p class="riqi">2017-01-16 14:40:00</p>
+											<p class="huifu">回复</p>
+											<p class="shouqi">收起回复</p>
+										</div>
+										<div class="clearfix"></div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<div id="page"></div>
+						<script type="text/javascript">
+							$(function() {
+								$("#page").Page({
+									totalPages: 20, //分页总数
+									liNums: 7, //分页的数字按钮数(建议取奇数)
+									activeClass: 'activP', //active 类样式定义
+									callBack: function(page) {
+										//console.log(page)
+									}
+								});
+							})
+						</script>
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript">
+				$('.huifu').click(function() {
+					var pinglun = '<div class="text text_add">' +
+						'<textarea name="comment"></textarea>' +
+						'<button class="fabiao" type="submit">发表评论</button>' +
+						'</div>'
+					$(this).parent().parent('li').append(pinglun);
+					$(this).hide();
+					$(this).siblings('.shouqi').show();
+					$(this).siblings('.shouqi').click(function(){
+						$('.text_add').hide();
+						$(this).hide();
+						$(this).siblings('.huifu').show();
+					});
+					$('.fabiao').click(function(){
+						$('.text_add').hide();
+						$('.shouqi').hide();
+						$('.huifu').show();
+					})
+
+				})
+			</script>
+		</section>
+
+		<!--footer-->
+		<div ng-include="urlfooter"></div>
+
+	</body>
+
+</html>

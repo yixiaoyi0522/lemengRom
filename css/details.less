@@ -1,0 +1,412 @@
+@charset "utf-8";
+.totalbox {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+//hearder
+.header {
+    margin-top: 20px;
+    .totalbox {
+        p.title {
+            font-size: 16px;
+            a {
+                font-size: 16px;
+                color: #2e2e2e;
+            }
+            a.active {
+                color: #1f85c5;
+            }
+        }
+        .left {
+            margin-top: 10px;
+            background: #fff;
+            width: 876px;
+            float: left;
+            overflow: hidden;
+            padding: 20px 40px;
+            border: 1px solid #bdbdbd;
+            box-sizing: border-box;
+            .img {
+                float: left;
+                width: 140px;
+                text-align: center;
+            }
+            .txt {
+                padding: 20px 0;
+                margin-left: 30px;
+                width: 550px;
+                float: left;
+                .title {
+                    font-size: 20px;
+                    color: #2e2e2e;
+                    p {
+                        display: inline-block;
+                    }
+                    .guanfang {
+                        font-size: 16px;
+                        padding: 5px;
+                        background: #f8b014;
+                        color: #fff;
+                        margin-left: 10px;
+                    }
+                }
+                .des {
+                    margin-top: 20px;
+                    font-size: 16px;
+                    tr {
+                        td {
+                            padding-top: 10px;
+                            padding-right: 40px;
+                            color: #777;
+                            span {
+                                color: #2e2e2e;
+                            }
+                        }
+                    }
+                }
+                .button {
+                    a {
+                        text-align: center;
+                        font-size: 18px;
+                        color: #fff;
+                        display: inline-block;
+                        width: 140px;
+                        padding: 10px 0;
+                        box-sizing: border-box;
+                        border-radius: 6px;
+                        margin: 30px 20px 0 0;
+                    }
+                    .made {
+                        background: #00b44b;
+                    }
+                    .download {
+                        background: #2196f3;
+                    }
+                }
+            }
+
+        }
+        .right {
+            margin-top: 10px;
+            width: 310px;
+            float: right;
+            .Related {
+                background: #fff;
+                border: 1px solid #bdbdbd;
+                .top_title {
+                    padding: 0 15px;
+                    box-sizing: border-box;
+                    border-bottom: 1px solid #bdbdbd;
+                    font-size: 24px;
+                    height: 60px;
+                    line-height: 60px;
+                    color: #2f2f2f;
+                }
+                .Rel_list {
+
+                    padding: 10px 12px;
+                    li {
+                        margin: 15px 0;
+                        font-size: 18px;
+                        span.num {
+                            display: inline-block;
+                            width: 22px;
+                            height: 22px;
+                            border-radius: 50%;
+                            text-align: center;
+                            color: #fff;
+                            background: #c2c2c2;
+                            font-size: 16px;
+                        }
+                        span {
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//rom介绍
+.content {
+    margin-top: 20px;
+    .totalbox {
+        .con_content {
+            border: 1px solid #bdbdbd;
+            background: #fff;
+            .top_title {
+                padding: 0 15px;
+                box-sizing: border-box;
+                border-bottom: 1px solid #bdbdbd;
+                font-size: 24px;
+                height: 60px;
+                line-height: 60px;
+                color: #2f2f2f;
+            }
+            .con_list {
+                margin-top: 20px;
+                padding: 0 15px;
+                .img {
+                    text-align: center;
+                    position: relative;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    .cir {
+                        width: 50px;
+                        height: 100px;
+                        position: absolute;
+                        background: #000;
+                        opacity: 0.4;
+                        top: 50%;
+                        margin-top: -50px;
+                        line-height: 120px;
+                        text-align: center;
+
+                    }
+                    .cirright {
+                        right: 0;
+                        border-radius: 100px 0 0 100px;
+                        img {
+                            margin-left: 10px;
+                            opacity: 1;
+                        }
+                    }
+                    .cirleft {
+                        left: 0;
+                        border-radius: 0 100px 100px 0;
+                        img {
+                            margin-right: 10px;
+                            opacity: 1;
+
+                        }
+
+                    }
+
+                }
+                .des {
+                    margin-top: 30px;
+                    padding: 0 10px;
+                    dl {
+                        margin-top: 30px;
+                        dt {
+                            font-size: 20px;
+                            margin-bottom: 20px;
+                        }
+                        dd {
+                            margin: 10px 0;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.comment {
+    margin-top: 20px;
+    .totalbox {
+        .comment_content {
+            background: #fff;
+            border: 1px solid #bdbdbd;
+            .top_title {
+                padding: 0 15px;
+                box-sizing: border-box;
+                border-bottom: 1px solid #bdbdbd;
+                font-size: 24px;
+                height: 60px;
+                line-height: 60px;
+                color: #2f2f2f;
+            }
+            .comment_sub {
+                padding: 0 20px;
+                .text {
+                    position: relative;
+                    margin-top: 20px;
+                    textarea {
+                        width: 100%;
+                        height: 200px;
+                        border: 1px solid #e0e0e0;
+                        outline: none;
+                        padding: 10px;
+                        box-sizing: border-box;
+                        font-size: 16px;
+                    }
+                    p {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        margin-top: -20px;
+                        margin-left: -80px;
+                        font-size: 16px;
+                        color: #2f2f2f;
+                        a {
+                            color: #2285c6;
+                        }
+                    }
+                    button {
+                        border: none;
+                        width: 140px;
+                        height: 46px;
+                        background: #2196f3;
+                        border-radius: 6px;
+                        color: #fff;
+                        font-size: 18px;
+                        position: absolute;
+                        bottom: 20px;
+                        right: 20px;
+                    }
+
+                }
+                ul.one {
+                    margin-top: 20px;
+                    padding-bottom: 20px;
+                    > li {
+                        margin-top: 10px;
+                        border-bottom: 1px solid #dbdbdb;
+                        padding: 10px 0;
+                        .img {
+                            float: left;
+                            width: 60px;
+                            height: 60px;
+                            img {
+                                width: 60px;
+                                height: 60px;
+                            }
+                        }
+                        .con {
+                            float: left;
+                            margin-left: 20px;
+                            height: 60px;
+                            line-height: 30px;
+                            p.name {
+                                font-size: 20px;
+                                color: #2285c6;
+                            }
+                            p.txt {
+                                font-size: 16px;
+                                color: #2e2e2e;
+                            }
+                        }
+                        .date {
+                            float: right;
+                            text-align: right;
+                            font-size: 16px;
+                            line-height: 30px;
+                            p.riqi {
+                                color: #2e2e2e;
+                            }
+                            p.huifu {
+                                color: #2285c6;
+                            }
+                            p.shouqi {
+                                color: #2285c6;
+                                display: none;
+                            }
+                        }
+                        > ul.two {
+                            margin-top: 10px;
+                            margin-left: 100px;
+                            > li {
+                                margin-top: 10px;
+                                .con {
+                                    .name {
+                                        font-size: 20px;
+                                        color: #2e2e2e;
+                                        i {
+                                            font-style: normal;
+                                            color: #2285c6;
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+                #page {
+                    height: 50px;
+                    display: table;
+                    margin: 20px auto 10px;
+                    font-size: 20px;
+                }
+                .page {
+                    text-align: center;
+                }
+                .fl {
+                    float: left;
+                }
+                .fr {
+                    float: right;
+                }
+                .pagingUl {
+                    float: right;
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                    height: 40px;
+                }
+                .pagingUl li {
+                    float: left;
+                    width: 40px;
+                    height: 40px;
+                    background: #fff;
+                    text-align: center;
+                    margin-right: 5px;
+
+                }
+                .pagingUl li a {
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                    text-align: center;
+                    line-height: 28px;
+                    color: #666;
+                    font-size: 20px;
+                    border: 1px solid #bfbfbf;
+
+                }
+                .next,
+                .prv {
+                    width: 30px;
+                    height: 30px;
+                    text-align: center;
+                    line-height: 30px;
+                    cursor: pointer;
+                    background: #fff;
+                    padding: 0 5px;
+                    border-radius: 5px;
+                }
+                .prv {
+                    margin-right: 10px;
+                }
+                .first,
+                .last {
+                    width: 50px;
+                    height: 30px;
+                    font-size: 20px;
+                    text-align: center;
+                    line-height: 30px;
+                    //      border: 1px solid #bfbfbf;
+                    cursor: pointer;
+                    background: #fff;
+                    padding: 0 5px;
+                    margin-right: 10px;
+                }
+                .activP,
+                .pagingUl li a:hover {
+                    background-color: #4da3e0!important;
+                    border: 1px solid #4da3e0!important;
+                    color: #fff!important;
+                }
+                .first:hover,
+                .last:hover,
+                .next:hover,
+                .prv:hover {
+                    color: #4DA3E0;
+                }
+            }
+        }
+    }
+}

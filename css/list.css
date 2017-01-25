@@ -1,0 +1,300 @@
+@charset "utf-8";
+.filter {
+  margin-top: 20px;
+}
+.filter .totalbox {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px 15px;
+  border: 1px solid #bdbdbd;
+  box-sizing: border-box;
+  background: #fff;
+}
+.filter .totalbox > div {
+  margin-top: 20px;
+}
+.filter .totalbox ul li {
+  display: inline-block;
+  margin-right: 30px;
+}
+.filter .totalbox ul li a {
+  font-size: 18px;
+}
+.filter .totalbox ul li.title {
+  width: 130px;
+  text-align: right;
+}
+.main {
+  margin-top: 20px;
+}
+.main .totalbox {
+  width: 1200px;
+  margin: 0 auto;
+}
+.main .totalbox .left {
+  width: 876px;
+  float: left;
+  overflow: hidden;
+}
+.main .totalbox .left .theNew {
+  background: #fff;
+  border: 1px solid #bdbdbd;
+}
+.main .totalbox .left .theNew .hotsub {
+  display: none;
+}
+.main .totalbox .left .theNew .top_title {
+  padding: 0 15px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #bdbdbd;
+  font-size: 24px;
+  height: 60px;
+  line-height: 60px;
+  color: #8e8e8e;
+}
+.main .totalbox .left .theNew .top_title .title a {
+  display: inline-block;
+  font-size: 24px;
+  color: #2f2f2f;
+}
+.main .totalbox .left .theNew .top_title span.count {
+  font-size: 18px;
+  color: #2e2e2e;
+}
+.main .totalbox .left .theNew .top_title span.count i {
+  color: #2196f3;
+  font-style: normal;
+}
+.main .totalbox .left .theNew .top_title span.txt {
+  font-size: 18px;
+  float: right;
+  color: #777;
+}
+.main .totalbox .left .theNew .top_title span.txt a {
+  color: #777;
+}
+.main .totalbox .left .theNew .top_title span.txt a.active {
+  color: #2e2e2e;
+}
+.main .totalbox .left .theNew .model_area {
+  padding: 0 20px;
+}
+.main .totalbox .left .theNew .model_area ul li {
+  padding: 20px 0;
+  border-bottom: 1px solid #bdbdbd;
+}
+.main .totalbox .left .theNew .model_area ul li .img {
+  float: left;
+  width: 90px;
+  text-align: center;
+}
+.main .totalbox .left .theNew .model_area ul li .txt {
+  padding: 10px 0;
+  margin-left: 10px;
+  width: 550px;
+  float: left;
+}
+.main .totalbox .left .theNew .model_area ul li .txt .title {
+  font-size: 20px;
+  color: #2e2e2e;
+}
+.main .totalbox .left .theNew .model_area ul li .txt .des {
+  margin-top: 20px;
+  font-size: 16px;
+}
+.main .totalbox .left .theNew .model_area ul li .txt .des tr td {
+  padding-top: 10px;
+  padding-right: 40px;
+  color: #777;
+}
+.main .totalbox .left .theNew .model_area ul li .txt .des tr td span {
+  color: #2e2e2e;
+}
+.main .totalbox .left .theNew .model_area ul li .button {
+  text-align: center;
+  float: right;
+  width: 180px;
+}
+.main .totalbox .left .theNew .model_area ul li .button a {
+  font-size: 18px;
+  color: #fff;
+  display: block;
+  width: 140px;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  margin: 15px auto 0;
+}
+.main .totalbox .left .theNew .model_area ul li .button .made {
+  background: #00b44b;
+}
+.main .totalbox .left .theNew .model_area ul li .button .download {
+  background: #2196f3;
+}
+.main .totalbox .left .theNew #page {
+  height: 50px;
+  display: table;
+  margin: 20px auto 10px;
+  font-size: 20px;
+}
+.main .totalbox .left .theNew .page {
+  text-align: center;
+}
+.main .totalbox .left .theNew .fl {
+  float: left;
+}
+.main .totalbox .left .theNew .fr {
+  float: right;
+}
+.main .totalbox .left .theNew .pagingUl {
+  float: right;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  height: 40px;
+}
+.main .totalbox .left .theNew .pagingUl li {
+  float: left;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  text-align: center;
+  margin-right: 5px;
+}
+.main .totalbox .left .theNew .pagingUl li a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 28px;
+  color: #666;
+  font-size: 20px;
+  border: 1px solid #bfbfbf;
+}
+.main .totalbox .left .theNew .next,
+.main .totalbox .left .theNew .prv {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  background: #fff;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+.main .totalbox .left .theNew .prv {
+  margin-right: 10px;
+}
+.main .totalbox .left .theNew .first,
+.main .totalbox .left .theNew .last {
+  width: 50px;
+  height: 30px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  background: #fff;
+  padding: 0 5px;
+  margin-right: 10px;
+}
+.main .totalbox .left .theNew .activP,
+.main .totalbox .left .theNew .pagingUl li a:hover {
+  background-color: #4da3e0!important;
+  border: 1px solid #4da3e0!important;
+  color: #fff!important;
+}
+.main .totalbox .left .theNew .first:hover,
+.main .totalbox .left .theNew .last:hover,
+.main .totalbox .left .theNew .next:hover,
+.main .totalbox .left .theNew .prv:hover {
+  color: #4DA3E0;
+}
+.main .totalbox .right {
+  width: 310px;
+  float: right;
+}
+.main .totalbox .right .newAdd,
+.main .totalbox .right .Related,
+.main .totalbox .right .notice {
+  background: #fff;
+  border: 1px solid #bdbdbd;
+}
+.main .totalbox .right .newAdd .top_title,
+.main .totalbox .right .Related .top_title,
+.main .totalbox .right .notice .top_title {
+  padding: 0 15px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #bdbdbd;
+  font-size: 24px;
+  height: 60px;
+  line-height: 60px;
+  color: #2f2f2f;
+  margin-left: -1px;
+}
+.main .totalbox .right .newAdd .new_list,
+.main .totalbox .right .Related .new_list,
+.main .totalbox .right .notice .new_list,
+.main .totalbox .right .newAdd .Rel_list,
+.main .totalbox .right .Related .Rel_list,
+.main .totalbox .right .notice .Rel_list {
+  padding: 12px;
+}
+.main .totalbox .right .newAdd .new_list li,
+.main .totalbox .right .Related .new_list li,
+.main .totalbox .right .notice .new_list li,
+.main .totalbox .right .newAdd .Rel_list li,
+.main .totalbox .right .Related .Rel_list li,
+.main .totalbox .right .notice .Rel_list li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+.main .totalbox .right .newAdd .new_list li span.num,
+.main .totalbox .right .Related .new_list li span.num,
+.main .totalbox .right .notice .new_list li span.num,
+.main .totalbox .right .newAdd .Rel_list li span.num,
+.main .totalbox .right .Related .Rel_list li span.num,
+.main .totalbox .right .notice .Rel_list li span.num {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  background: #c2c2c2;
+  font-size: 16px;
+}
+.main .totalbox .right .newAdd .new_list li span,
+.main .totalbox .right .Related .new_list li span,
+.main .totalbox .right .notice .new_list li span,
+.main .totalbox .right .newAdd .Rel_list li span,
+.main .totalbox .right .Related .Rel_list li span,
+.main .totalbox .right .notice .Rel_list li span {
+  margin-left: 10px;
+}
+.main .totalbox .right .Related {
+  margin-top: 20px;
+}
+.main .totalbox .right .notice {
+  margin-top: 20px;
+}
+.main .totalbox .right .notice .top_title p {
+  display: inline-block;
+}
+.main .totalbox .right .notice .top_title a {
+  color: #777;
+  font-size: 18px;
+  float: right;
+}
+.main .totalbox .right .notice .n_list {
+  padding: 10px 12px;
+}
+.main .totalbox .right .notice .n_list ul li {
+  margin-top: 10px;
+  font-size: 18px;
+}
+.main .totalbox .right .notice .n_list ul li span.num {
+  margin-right: 5px;
+}
+.main .totalbox .right .tool {
+  margin-top: 15px;
+}
